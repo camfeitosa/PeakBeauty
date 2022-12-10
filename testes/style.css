@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2? family= Bitter:wght@600 & family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*Style Tabela de Preços*/
+.tabela-preco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-preco{
+    background-color: #ccc8be;
+    box-sizing: border-box;
+    width: 80%;
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid 1.5px #838181;
+}
+.titulo-preco h2{
+    color: #bd8605;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: "Montserrat", sans-serif;
+}
+.divisao-preco{
+    background-color: #ccc8be;
+    box-sizing: border-box;
+    width: 80%;
+    height: 52px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid 1.5px #838181;
+}
+.divisao-preco .cnt-left, .divisao-preco, .divisao-preco .cnt-right {
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+}
+.divisao-preco .cnt-left {
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5%;
+}
+.cnt-left h3{
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.divisao-preco .cnt-right {
+    width: 20%;
+    float: right;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5%;
+}
+.cnt-right h3{
+    color: #2b2b2b;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+/*Fim Style Tabela de Preços*/

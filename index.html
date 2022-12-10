@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Peak Beauty - Início</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="icon" type="imagem/png" href="./img/icon.png"/>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function link(){
+            window.location = "index.html";
+        }
+        function scrollToTop(){
+            window.scrollTo(0,0);
+        }
+    </script>
+    </head>
+    <body>
+        <!--Menu 1-->
+        <header>
+            <img src="./img/logo.png" class="logo"alt="logo" onclick="link()">
+            <nav> 
+                <ul class="nav-links">
+                    <li><a href="./pages/sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="./pages/contato.php">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="select/index.php" target="_blank"><button>AGENDE AGORA</button></a>
+        </header>
+        <!--Fim Menu 1--> 
+
+        <!--Slider-->
+         <div id="slider">
+            <img class="selected" src="./img/b1.png" alt="Image1">
+            <img src="./img/b2.png" alt="Image2">
+            <img src="./img/b3.png" alt="Image3">
+            <img src="./img/b4.png" alt="Image4">
+            <img src="./img/b5.png" alt="Image5">
+            <img src="./img/b6.png" alt="Image6">
+            <img src="./img/b7.png" alt="Image7">
+        </div>
+        <!--Fim Slider-->
+
+        <!--Menu 2-->
+        <main class="coluna100">
+                <div class="menu2">
+                    <ul>
+                        <li>
+                            <a href="./pages/cabelo.html">CABELO</a>
+                        </li>
+                        <li>
+                            <a href="./pages/unhas.html">UNHAS</a>
+                        </li>
+                        <li>
+                            <a href="./pages/sobrancelha.html">SOBRANCELHA</a>
+                        </li>
+                        <li>
+                            <a href="./pages/cilios.html">CÍLIOS</a>
+                        </li>
+                        <li>
+                            <a href="./pages/maquiagem.html">MAQUIAGEM</a>
+                        </li>
+                    </ul>
+                </div>
+            <script src="./js/script.js"></script>
+        </main> 
+        <!--Fim Menu 2-->
+
+        <!--Início-->
+        <section class="secao">
+            <div class="circle"></div>
+            <div class="content-1">
+                <div class="textBox">
+                    <h2>Você no seu Máximo<br>com <span>Peak Beauty</span></h2>
+                    <p>
+                        A Peak Beauty conta com serviços de manicure, pedicure, maquiagem, cabeleireiro, extensão de cilios, e claro, o melhor desing de sobrancelhas da região. Com atendimento diferenciado, oferecemos um ambiente acolhedor e aconchegante. Pensando no seu bem estar, prezamos pela pontualidade e mão de obra qualificada.​
+                    </p>
+                    <a href="./pages/sobrenos.html">Leia Mais</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./img/img1.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png');changeCircleColor('#d78b2b')"></li>
+                <li><img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png');changeCircleColor('#7e3e24')"></li>
+                <li><img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png');changeCircleColor('#b53446')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="https://twitter.com/peakkbeauty" target="_blank"><img src="./img/twiter_i.png"></a></li>
+                <li><a href="https://www.instagram.com/peakb.eauty/" target="_blank"><img src="./img/instagram_i.png"></a></li>
+                <li><a href="mailto:peak.beauty.pb@gmail.com?subject=Olá"><img src="./img/email_i.png"></a></li>
+            </ul>
+        </section>
+        <!--Fim Início-->
+
+        <!--Card Serviços-->
+        <div class="divisao">
+
+        <!-- Conteúdo Esquerda-->
+            <div class="cnt-left">
+                <h1>POR QUE ESCOLHER A PEAK BEAUTY?</h1>
+            </div>
+        <!--Fim Conteúdo Esquerda-->
+    
+        <!--Direita-->
+            <div class="cnt-right">
+                <p>✓&nbsp; Para sentir-se bem consigo mesmo
+                    <br>
+                    <br>
+                    ✓&nbsp; Para não onerar o seu orçamento
+                    <br>
+                    <br>
+                    ✓&nbsp; Para dispor de tratamentos de beleza testados e aprovados
+                    <br>
+                    <br>
+                    ✓&nbsp; Para não ser cobaia de estudantes de estética
+                    <br>
+                    <br>
+                    ✓&nbsp; Para ter a sua disposição uma equipe ética, cordial e qualificada
+                    </p>
+            </div>
+        </div>
+        <!--Fim Direita-->
+
+        <!--Título-->
+        <div class="titulos">
+            <h1>Conheça Nossos<br><span>Serviços</span></h1>
+        </div>
+        <!--Fim Título-->
+        
+        <!--Serviços-->
+        <div class="servicos">
+            <div class="container">
+            <!-- Card 1 -->
+            <div class="card-s card-s1">
+                <div class="card-head">
+                <img src="./img/cabelo_home.png" class="card-image">
+                </div>
+                <div class="card-b">
+                <h2 class="card-t">Cabelo</h2>
+                <p class="card-text">
+                    Transformando cabelos e elevando a autoestima, visando a saúde capilar em primeiro lugar.
+                </p>
+                </div>
+                <div class="card-rodape">
+                <a href="./pages/cabelo.html">Ver Mais</a>
+                </div>
+            </div>
+            <!-- Card 1 -->
+
+            <!-- Card 2 -->
+            <div class="card-s card-s1">
+                <div class="card-head">
+                    <img src="./img/unhas_home.png" class="card-image">
+                </div>
+                <div class="card-b">
+                <h2 class="card-t">Unhas</h2>
+                <p class="card-text">
+                    Ideal para a mulher moderna que precisa estar pronta para qualquer ocasião.
+    
+                </p>
+                </div>
+                <div class="card-rodape">
+                <a href="./pages/unhas.html">Ver Mais</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+
+            <!-- Card 3 -->
+            <div class="card-s card-s1">
+                <div class="card-head">
+                    <img src="./img/sobrancelha_home.png" class="card-image">
+                </div>
+                <div class="card-b">
+                <h2 class="card-t">Sobrancelha</h2>
+                <p class="card-text">
+                    Design de Sobrancelhas com profissionais altamente capacitados que oferecem o melhor design para seu rosto.
+                </p>
+                </div>
+                <div class="card-rodape">
+                <a href="./pages/sobrancelha.html">Ver Mais</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+
+            <!-- Card 4 -->
+            <div class="card-s card-s1">
+                <div class="card-head">
+                    <img src="./img/cilios_home.png" class="card-image">
+                </div>
+                <div class="card-b">
+                <h2 class="card-t">Cílios</h2>
+                <p class="card-text">
+                    Feito de forma segura e profissional, trazendo praticidade e elegância ao seu dia a dia.
+                </p>
+                </div>
+                <div class="card-rodape">
+                <a href="./pages/cilios.html">Ver Mais</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+
+            <!-- Card 5 -->
+            <div class="card-s card-s1">
+                <div class="card-head">
+                    <img src="./img/maquiagem_home.png" class="card-image">
+                </div>
+                <div class="card-b">
+                <h2 class="card-t">Maquiagem</h2>
+                <p class="card-text">
+                    Trabalhando com os melhores produtos do mercado, deixando você deslumbrante até final do seu evento.
+                </p>
+                </div>
+                <div class="card-rodape">
+                <a href="./pages/maquiagem.html">Ver Mais</a>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            </div>
+        </div>
+        <!--Fim Serviços-->
+
+        <!--Imagem Relógio--> 
+        <div class="hor-img">
+            <img src="./img/time.png">
+        </div>
+        <!--Fim Imagem Relógio--> 
+
+        <!--Título 2-->
+        <div class="titulos2">
+            <h1>Horários de<br><span>Atendimento</span></h1>
+        </div>
+        <!--Fim Título 2-->
+
+        <!--Horários--> 
+        <div class="atendimento">
+            <div class="horario">
+                <div class="hor-body">
+                    <p class="hor-texto">Seg - Sex
+                        <span>············································································································</span>
+                    8h às 20h</p>
+                    <p class="hor-texto">Sáb - Dom 
+                        <span>············································································································</span>
+                    8h às 15h</p>
+                    <p class="hor-texto">Feriados 
+                        <span>············································································································</span>
+                    8h às 15h</p>
+                    <br>
+                    <br>
+                <a href="select/index.php" target="_blank"><button id="agende">Agende seu Horário!</button></a>
+                </div>
+            </div>
+        </div>
+        <!--Fim Horários-->
+
+        <!--Contato-->
+        <div class="contato-home">
+            <div class="contato">
+                <div class="card-body">
+                <h1 class="card-titulo">Quer entrar em contato conosco?</h1>
+                <p class="card-texto">
+                    Para consultas de parcerias, publicidades e patrocínios, use o botão abaixo e encontre a melhor maneira de falar com nossa equipe. 
+                </p>
+                <a href="./pages/contato.php"><button id="conosco">Fale Conosco!</button></a>
+                </div>
+            </div>
+        </div>
+        <!--Fim Contato-->
+
+         <!--Botão Voltar ao Topo-->
+         <div onclick="scrollToTop()" class="scroll-top">
+            <img src="./img/icon_tpi.png">
+        </div>
+        <!--Fim Botão Voltar ao Topo-->
+        
+        <!--Rodapé-->
+        <footer class="footer-distributed">
+
+        <!--Esquerda-->
+            <div class="footer-left">
+                <img src="./img/icon.png" class="icon-footer" alt="icon" onclick="link()">
+                <img src="./img/logo.png" class="logo-footer" alt="logo" onclick="link()">
+                <p class="footer-links">
+                    <a href="./index.html">Início</a>
+                    &nbsp;|&nbsp;
+                    <a href="./pages/sobrenos.html">Sobre Nós</a>
+                    &nbsp;|&nbsp;
+                    <a href="./pages/contato.php">Contato</a>
+                </p>
+                <p class="footer-company-name">© Copyright 2022<strong> PeakBeauty </strong>Todos os direitos reservados.</p>
+            </div>
+        <!--Fim Esquerda-->
+    
+        <!--Centro-->
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Rua Amapá, 253 - Recanto Silvestre</span>
+                        Santana de Parnaíba - SP</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+55 11 98894-5603</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:peak.beauty.pb@gmail.com?subject=Olá">peak.beauty.pb@gmail.com</a></p>
+                </div>
+            </div>
+        <!--Fim Centro-->
+    
+        <!--Direita-->
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>Sobre o Site</span>
+                    Projeto de site criado para fins pedagógicos que envolve os componentes do curso técnico de Informática para Internet.
+                </p>
+                <div class="footer-icons">
+                    <a href="https://twitter.com/peakkbeauty" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/peakb.eauty/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        <!--Fim Direita-->
+        </footer>
+        <!--Fim Rodapé-->
+    
+    </body>
+</html>

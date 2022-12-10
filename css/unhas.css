@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2? family= Bitter:wght@600 & family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style Antes e Depois*/
+.servicos{
+    min-height: 52vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-s{
+    width: 190px;
+    height: 190px;
+    margin: 20px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.card-image{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+    transition: 1.0s;
+}
+.card-image:hover{
+    opacity: 7;
+}
+
+/*Imagens 1*/
+#fig1{background-image: url('../img2/un1.png');}
+
+#fig1:hover{background-image: url('../img2/un2.png');}
+
+/*Imagens 2*/
+#fig2{background-image: url('../img2/un3.png');}
+
+#fig2:hover{background-image: url('../img2/un4.png');}
+
+/*Imagens 3*/
+#fig3{background-image: url('../img2/un5.png');}
+
+#fig3:hover{background-image: url('../img2/un6.png');}
+
+/*Imagens 4*/
+#fig4{background-image: url('../img2/un7.png');}
+
+#fig4:hover{background-image: url('../img2/un8.png');}
+
+/*Imagens 5*/
+#fig5{background-image: url('../img2/un9.png');}
+
+#fig5:hover{background-image: url('../img2/un10.png');}
+/*Fim Style Antes e Depois*/
+

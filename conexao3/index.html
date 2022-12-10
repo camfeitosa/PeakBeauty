@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro e Login</title>
+
+        <link rel="icon" type="imagem/png" href="../img/icon.png"/>
+
+        <!--Jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+                
+        <!-- Boxicons CSS -->
+       <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container2">
+            <a href="../select/index.php">
+            <div class="img">
+                <img src="images/icon_t.png"> 
+            </a>
+            </div> 
+            <section class="container forms">
+                <div class="form login">
+                    <div class="form-content">
+                        <!--Login-->
+                        <header>Login</header>
+                        <p>Bem vindo (a) de volta!!! Faça login com seus dados cadastrados</p>
+
+                        <form action="login/login2.php" method="POST">
+
+                            <div class="field input-field">
+                                <input type="email" placeholder="Email" name="email" class="input" autofocus required>
+                            </div>
+
+                            <div class="field input-field">
+                                <input type="password" placeholder="Senha" name="senha" class="password" required>
+                                <i class='bx bx-hide eye-icon'></i>
+                            </div>
+
+                            <div class="form-link">
+                                <a href="#" class="forgot-pass">Esqueceu a senha?</a>
+                            </div>
+
+                            <div class="field button-field">
+                                <button type="submit" name="login" value="Entrar">Entrar</button>
+                            </div>
+                        </form>
+
+                        <div class="form-link">
+                            <span>Ainda não é cliente? <a href="#" class="link signup-link">Cadastrar-se</a></span>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                    <!-- Social Media -->
+                    <script src="https://accounts.google.com/gsi/client" async defer></script>
+                        <div id="g_id_onload"
+                            data-client_id="226108847285-4qsbmn127bev82kka3h4h8gl0braqp3k.apps.googleusercontent.com"
+                            data-callback="handleCredentialResponse">
+                        </div>
+                    <div class="g_id_signin" data-type="standard"></div>
+
+                </div>
+                <!-- Fim Login-->
+				
+                <!-- Cadastro Form -->
+                <div class="form signup">
+                    <div class="form-content">
+                        <header>Cadastro</header>
+                        <p>Seja bem vindo (a)!!! Cadastre-se para realizar o agendamento em nosso salão</p>
+
+                        <form method="POST" name="cad" action="cad.php">
+
+                            <div class="field input-field">
+                                <input type="text" name="nome" placeholder="Nome" class="input" autofocus required>
+                            </div>
+
+                            <div class="field input-field">
+                                <input type="email" name="email" id="email" placeholder="Email" class="input" required>
+                            </div>
+                            
+                            <div class="field input-field">
+                                <input type="tel" name="cel" id="cel" placeholder="(xx) xxxxx-xxxx" class="input" required>
+                            </div>
+
+                            <script>
+                                $("#cel").mask("(99) 99999-9999");
+                            </script>	
+                            
+                            <div class="field input-field">
+                                <input type="password" name="senha" placeholder="Criar senha" id="password" class="password" required>
+                            </div>
+
+                            <div class="field input-field">
+                                <input type="password" name="confirma" placeholder="Confirmar senha" id="confirm_password" class="password" required>
+                                <i class='bx bx-hide eye-icon'></i>
+                            </div>
+                            <div class="field button-field">
+                                <button type="submit" name="cadastrar" value="Cadastrar">Cadastrar</button>
+                            </div>
+                        </form>
+
+                        <div class="form-link">
+                            <span>Já possui uma conta? <a href="#" class="link login-link">Entrar</a></span>
+                        </div>
+                    </div>
+                
+                    <div class="line"></div>
+
+                    <div class="media-options">
+                        <script src="https://accounts.google.com/gsi/client" async defer></script>
+                        <div id="g_id_onload"
+                            data-client_id="226108847285-4qsbmn127bev82kka3h4h8gl0braqp3k.apps.googleusercontent.com"
+                            data-callback="handleCredentialResponse">
+                        </div>
+                    <div class="g_id_signin" data-type="standard"></div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+		
+       <!--  JavaScript --> 
+        <script>
+                var password = document.getElementById("password")
+        , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword(){
+        if(password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Senhas não conferem");
+        } else {
+            confirm_password.setCustomValidity('');
+        }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+
+        </script>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

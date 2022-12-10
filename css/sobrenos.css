@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2? family= Bitter:wght@600 & family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Style Quem Somos*/
+.section{
+	width: 100%;
+	min-height: 450px;
+}
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 190px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 14px;
+    color: #a87602;
+	font-family: "Montserrat", sans-serif;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color: #aa7700be;
+	font-size: 19px;
+	font-family: "Montserrat", sans-serif;
+}
+.content-section .content p{
+	color: #2b2b2b;
+	margin-top: 12px;
+	font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+}
+.content-section .social{
+	margin-top: 20px;
+}
+.content-section .social i{
+	color: #a87602;
+	font-size: 25px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+    color: #865f02;
+}
+/*Fim Style Quem Somos*/
+
+/*Style Objetivos*/
+.divisao-obj{
+    background-color: #efefef;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 85%;
+    height: 240px;
+	margin-top: 130px;
+	margin-bottom: 130px;
+    margin-left: 7.5%;
+}
+.divisao-obj .missao, .divisao-obj, .divisao-obj .visao, .divisao-obj .valores, .divisao-obj .empresa{
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+}
+.missao h1, .visao h1, .valores h1, .empresa h1{
+    padding-top: 35px;
+    color: #a87602;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;  
+}
+.missao p, .visao p, .valores p, .empresa p{
+    padding-top: 15px;
+    padding-left: 10%;
+    width: 90%;
+    color: #2b2b2b;
+	font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+    text-align: center;
+}
+
+/*Missão*/
+.divisao-obj .missao {
+    width: 25%;
+    height: 240px;
+    max-height: 240px;
+    float: left;
+    border-right: solid 1px #2b2b2b54;
+}
+
+/*Visão*/
+.divisao-obj .visao {
+    width: 25%;
+    height: 240px;
+    max-height: 240px;
+    float: left;
+    border-right: solid 1px #2b2b2b54;
+}
+
+/*Valores*/
+.divisao-obj .valores {
+    width: 25%;
+    height: 240px;
+    max-height: 240px;
+    float: left;
+    border-right: solid 1px #2b2b2b54;
+}
+
+/*Empresa*/
+.divisao-obj .empresa {
+    width: 25%;
+    height: 240px;
+    max-height: 240px;
+    float: right;
+    text-align: center;
+}
+.empresa img{
+    padding-top: 30px;
+    width: 120px;
+}
+/*Fim Style Objetivos*/
+
+/*Style Equipe Desenvolvimento*/
+.team{
+	background-color: #2b2b2b;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+	position: relative;
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.team-content{
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 3rem;
+}
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+.center h1{
+	color: #efefef;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 24px;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+.box{
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.45);
+	border-radius: 8px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 20px;
+	font-weight: 500;
+	color: #efefef;
+	margin-bottom: 8px;
+	font-family: "Montserrat", sans-serif;
+}
+.box h5{
+	font-size: 14.5px;
+	font-weight: 500;
+	color: #5f5f5f;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+	font-family: "Montserrat", sans-serif;
+}
+.icons i{
+	display: inline-block;
+	color: #efefef;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}
+audio{
+	padding-top: 10px;
+	height: 25px;
+	width: 80%;
+	border-radius: 5px;
+}
+/*Fim Style Equipe Desenvolvimento*/
+
+/*Style Footer*/
+footer{
+    bottom: 0;
+}
+.footer-distributed{
+    background-color: #2b2b2b;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Footer left*/
+.footer-distributed .footer-left {
+    width: 30%;
+}
+.icon-footer{
+   width: 65px;
+   cursor: pointer;
+}
+.logo-footer{
+    width: 190px;
+    cursor: pointer;
+}
+/* Footer links */
+.footer-distributed .footer-links {
+    color: #c2c2c2;
+    margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-distributed .footer-company-name {
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/*Footer Center*/
+.footer-distributed .footer-center{
+    width: 35%;
+}
+.footer-distributed .footer-center i{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #c2c2c2;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #c2c2c2;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer-distributed .footer-center p a {
+    color: #ad8936;
+    text-decoration: none;
+    ;
+}
+
+/*Footer Right*/
+.footer-distributed .footer-right {
+    width: 30%;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #c2c2c2;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #c2c2c2;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    font-size: 20px;
+    color: #c2c2c2;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:hover {
+    background-color: #ad8936;
+}
+.footer-links a:hover {
+    color: #ad8936;
+}      
+/*Fim Style Footer*/

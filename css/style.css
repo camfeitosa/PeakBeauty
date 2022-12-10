@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2? family= Bitter:wght@600 & family= Roboto:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Style Menus*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #efefef;
+}
+li, a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #efefef;
+    text-decoration: none;
+}
+button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #efefef;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 5%;
+    padding-top: 10px;
+    height: 95px;
+    z-index: 3;
+    background-color: #2b2b2b;
+}
+.logo{
+    height: 70px;
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav-links{
+   list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    padding-bottom: 10px;
+}
+.nav-links li a:hover{
+    color: #e3ae36;
+}
+button{
+    margin-left: 20px;
+    padding: 9px 16px;
+    background-color: #e3af36e1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: #bb8302;
+}
+.coluna100{
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+.menu2{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 320px;
+    font-family: "Montserrat", sans-serif;
+}
+.menu2 ul{
+    padding-top: 255px;
+    text-align: center;
+}
+.menu2 ul li{
+    display: inline-block;
+    padding-right: 85px;
+}
+.menu2 ul li::after{
+    content:"";
+    width: 20px;
+    position: absolute;
+}
+.menu2 ul li:last-child::after{
+    content:"";
+}
+.menu2 ul li a{
+    color: #efefef;
+    text-decoration: none; 
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.menu2 ul li a:hover{
+    color: #e3ae36;
+    border-bottom: 2.5px solid #e3ae36;
+}
+#slider{
+    width: 100%;
+    height: 25vw;
+    max-height: 320px;
+    position: absolute;
+}
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: opacity 700ms;
+}
+#slider img.selected{ 
+    opacity: 1;
+}
+/*Fim Style Menus*/
+
+/*Style Início*/
+.secao{
+    position: relative;
+    margin-top: 320px;
+    width: 100%;
+    max-height: 90vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+}
+.content-1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-1 .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content-1 .textBox h2{
+    color: #2b2b2b;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+}
+.content-1 .textBox h2 span{
+    color: #bd8605;
+    font-size: 1em;
+    font-weight: 900;
+    font-family: 'DM Serif Display', serif;
+}
+.content-1 .textBox p{
+    padding-top: 20px;
+    color: #2b2b2b;
+    font-family: 'Poppins', sans-serif;
+}
+.content-1 .textBox a{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #bd8605;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+}
+.content-1 .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: 20px;
+}
+.content-1 .imgBox img{
+    max-width: 338px;
+}
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 48px;
+}
+.sci{
+    position: absolute;
+    top: 60%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin: 3.5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d78b2b;
+    clip-path: circle(600px at right 800px);
+}
+/*Fim Style Início*/
+
+/*Style Porque*/
+.divisao{
+    margin-top: 70px;
+    background-color: #2b2b2b;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.divisao .cnt-left, .divisao, .divisao .cnt-right {
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+}
+
+/*Conteúdo Esquerda*/
+.divisao .cnt-left {
+    width: 50%;
+    height: 300px;
+    max-height: 300px;
+    background-color: #2b2b2b;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cnt-left h1{
+    color: #f3b82d;
+    font-size: 32px;
+    font-weight: 900;
+    width: 400px;
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*Conteúdo Direita*/
+.divisao .cnt-right {
+    width: 50%;
+    height: 300px;
+    max-height: 300px;
+    float: right;
+    background-color: #2b2b2b;
+    align-items: center;
+    text-align: left;
+}
+.cnt-right p{
+    color: #f8c54f;
+    font-size: 15px;
+    width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+/*Fim Style Porque*/
+
+/*Style Titulos*/
+.titulos{
+    margin-top: 90px;
+    width: 100%;
+    height: 40px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.titulos h1{
+    color: #2b2b2b;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 5px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.titulos h1 span{
+    color: #bd8605;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 5px 0;
+}
+/*Fim Style Titulos*/
+
+/*Style Titulos 2*/
+.titulos2{
+    margin-top: 60px;
+    width: 100%;
+    height: 40px;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.titulos2 h1{
+    color: #2b2b2b;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 5px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.titulos2 h1 span{
+    color: #bd8605;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 5px 0;
+}
+/*Fim Style Titulos 2*/
+
+/*Style Serviços*/
+.servicos{
+    background-color: #efefef;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card-s{
+    width: 235px;
+    height: 400px;
+    margin: 12px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+.card-head{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+.card-image{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+.card-b{
+    height: 172px;
+    padding: 15px;
+    text-align: center;
+}
+.card-t{
+    font-family: "Montserrat", sans-serif;
+    color: #a87602;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.card-text{
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13.5px;
+    width: 200px;
+    margin: 0 auto;
+    color: #2b2b2b;
+}
+.card-rodape{
+    text-align: center;
+    background-color: #000;
+}
+.card-rodape a{
+    color: #fff;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.card-s1 .card-rodape{
+    background-color: #a87602;
+}
+.card-s:hover{
+    background-color: #f8f8f8;
+    transform: scale3d(1.1, 1.1, 1);
+}
+/*Fim Style Serviços*/
+
+/*Style Imagem Relógio*/
+.hor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Fim Style Imagem Relógio*/
+
+/*Style Horários*/
+.atendimento{
+    background-color: #efefef;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horario{
+    width: 1100px;
+    height: 350px;
+    overflow: hidden;
+}
+.hor-body{
+    text-align: center;
+}
+.hor-texto{
+    padding-top: 40px;
+    color: #2b2b2b;
+    font-size: 18.5px;
+    width: 850px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.hor-texto p span{
+    border-bottom: 1px dashed;
+    top: 50%;
+    font-size: 1px;
+}
+#agende{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+#agende{
+    margin-left: 20px;
+    margin: 14px;
+    padding: 18px 22px;
+    background-color: #fac23e;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+/* Fim Style Horários*/
+
+
+/*Style Contato*/
+.contato-home{
+    background-color: #efefef;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contato{
+    width: 1100px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    background-image: url(../img/contato_home.png);
+}
+.card-body{
+    padding: 15px;
+    text-align: center;
+}
+.card-titulo{
+    padding-top: 78px;
+    color: #efefef;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 5px 0;
+    font-family: "Montserrat", sans-serif;
+}
+.card-texto{
+    color: #efefef;
+    font-size: 18.5px;
+    width: 850px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+#conosco{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+#conosco{
+    margin-left: 20px;
+    margin: 14px;
+    padding: 18px 22px;
+    background-color: #fac23e;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+/* Fim Style Contato*/
+
+/*Style Scroll Top*/
+.scroll-top{
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #efefef;
+    font-size: 22px;
+}
+.scroll-top img{
+    width: 56px;
+}
+/*Fim Style Scroll Top*/
