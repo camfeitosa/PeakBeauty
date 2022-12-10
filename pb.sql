@@ -45,14 +45,7 @@ CREATE TABLE IF NOT EXISTS `cad_cliente` (
 --
 
 INSERT INTO `cad_cliente` (`id_cliente`, `nome_cliente`, `tel_cliente`, `email_cliente`, `senha_cliente`) VALUES
-(2, 'Kelvin', '(11) 97279-0635', 'kelvin123@gmail.com', '123'),
-(3, 'Camila', '(11) 97279-0635', 'camilafeitosamiranda@gmail.com', '123'),
-(5, 'Lucas', '(11) 65258-5455', 'lucasgamerrrrr@yahoo.com', 'lucasbunito'),
-(7, 'mariana', '(11) 65258-5455', 'mariana@gmail.com', 'mariana'),
-(8, 'gaby', '(11) 98894-5603', 'gaby@gmail.com', '456'),
-(9, 'gaby', '(11) 98894-5603', 'gaby1@gmail.com', 'gaby002'),
-(10, 'Raiser', '(11) 95158-6896', 'raiseroi@outlook.com', '181155gd'),
-(11, 'Gabriel Lopes', '(11) 99807-7190', 'gabbs_Lopes@outlook.com', '123');
+(1, 'Kelvin', '(11) 97279-0635', 'kelvin123@gmail.com', '123'),
 
 -- --------------------------------------------------------
 
@@ -149,13 +142,6 @@ CREATE TABLE IF NOT EXISTS `contato` (
 
 INSERT INTO `contato` (`id_contato`, `nome`, `email`, `mensagem`) VALUES
 (1, 'Camila', 'camilafeitosamiranda@gmail.com', 'Teste teste teste teste teste'),
-(2, ' cxv', 'camila@gmail.com', 'teste'),
-(3, 'Camila Feitosa de Miranda Coutinho', 'camilafeitosamiranda@gmail.com', 'LEgal'),
-(4, 'Camila Feitosa de Miranda Coutinho', 'camilafeitosamiranda@gmail.com', 'LEgal'),
-(5, 'Camila', 'camilafeitosamiranda@gmail.com', 'Legal'),
-(6, 'camis', 'camilafeitosa@gmail.com', '123'),
-(7, 'Camila', 'camilafeitosamiranda@gmail.com', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAA'),
-(8, ' cxv', 'camila@gmail.com', 'parabÃ©ns');
 
 -- --------------------------------------------------------
 
