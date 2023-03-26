@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Peak Beauty - Contato</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_pages.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="imagem/png" href="../img/icon.png"/>
+    <script>
+        function link(){
+            window.location = "../index.html";
+        }
+        function scrollToTop(){
+            window.scrollTo(0,0);
+        }
+    </script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo.png" class="logo"alt="logo" onclick="link()">
+            <nav> 
+                <ul class="nav_links">
+                    <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="./contato.php" style="color: #e3ae36;">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="../select/index.php" target="_blank"><button>AGENDE AGORA</button></a>
+        </header>
+        <main class="coluna100">
+                <div class="menu2">
+                    <ul>
+                        <li>
+                            <a href="./cabelo.html">CABELO</a>
+                        </li>
+                        <li>
+                            <a href="./unhas.html">UNHAS</a>
+                        </li>
+                        <li>
+                            <a href="./sobrancelha.html">SOBRANCELHA</a>
+                        </li>
+                        <li>
+                            <a href="./cilios.html">CÍLIOS</a>
+                        </li>
+                        <li>
+                            <a href="./maquiagem.html">MAQUIAGEM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <div class="navegacao">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./contato.php">Contato</a></li>
+            </ul>
+        </div>
+        <!--Fim Link Navegação-->
+
+        <div class="container2">
+
+            <!-- Mapa --> 
+             <div class="map"> <iframe
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.37273578935!2d-46.88673458538772!3d-23.410898961937384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf1c8c96e301d5%3A0x4cb805b4d08f351f!2sR.%20Amap%C3%A1%2C%20253%20-%20Recanto%20Silvestre%20(Fazendinha)%2C%20Santana%20de%20Parna%C3%ADba%20-%20SP%2C%2006530-240!5e0!3m2!1spt-BR!2sbr!4v1666467515777!5m2!1spt-BR!2sbr"
+                 width="700" top="100px" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+ 
+             <!-- Entre em contato -->
+             <div class="info">
+                 <h1 class="info-h1">Entre em contato conosco</h1>
+                 <div>
+                     <p class="num"><a href="https://api.whatsapp.com/send?phone=5511988945603&text=Como%20a%20Peak%20Beauty%20pode%20te%20ajudar%3F" target="_blank">
+                         <img src="../img/whatsapp.png" class="info-img">
+                         +55 11 98894-5603
+                        </a></p>
+                 </div>
+                 <div>
+                     <p>
+                         <img src="../img/telefone.png" class="info-img">
+                         +55 11 4022-8922
+                        </p>
+                 </div><br>
+ 
+                 <h1 class="info-h1">Localização</h1>
+                 <div>
+                     <p class="info-p">
+                         <img src="../img/localizacao.png" class="info-img">
+                         <span>Rua Amapá, 253 - Recanto Silvestre</span>
+                         Santana de Parnaíba - SP (Próximo ao UPA - Fazendinha)
+                     </p>
+                 </div><br>
+                 <h1 class="info-h1">Redes Sociais</h1>
+                 <br>
+                 <div class="media-options">
+                     <a href="https://twitter.com/peakkbeauty" target="_blank" class="field twitter">
+                         <i class='bx bxl-twitter twitter-icon'></i>
+                         <span>Twitter</span>
+                     </a>
+                 </div><br>
+                 <div class="media-options">
+                     <a href="https://www.instagram.com/peakb.eauty/" target="_blank" class="field insta">
+                         <i class='bx bxl-instagram instagram-icon'></i>
+                         <span>Instagram</span>
+                     </a>
+                 </div>
+             </div>
+ 
+         <!-- Formulário de contato -->
+             <div class="contato">
+                 <h1>Deixe uma mensagem</h1>
+                 <form action="api/contato.php" method="POST" class="form">
+                     <label for="name">Nome</label>
+                     <input type="text" name="nome" id="name" placeholder="<?= $nome; ?>" required />
+                     <label for="email">E-mail</label>
+                     <input type="email" name="email" id="email"  placeholder="<?= $email; ?>" required  />
+                     <label for="message">Mensagem</label>
+                     <textarea name="mensagem" id="message" required></textarea>
+                     <button class="button" name="enviar" type="submit">Enviar</button>
+                 </form>
+             </div>
+ 
+         <!-- Emails -->
+             <div class="email">
+                 <div>
+                     <h2>Telefones</h2>
+                     <p class="num"><a href="https://api.whatsapp.com/send?phone=5511988945603&text=Como%20a%20Peak%20Beauty%20pode%20te%20ajudar%3F" target="_blank"><i class='bx bxl-whatsapp'></i>&nbsp;+55 11 98894-5603</a></p>
+                     <p><i class='bx bxs-phone'></i>&nbsp;+55 11 4022-8922</p>
+                 </div>
+                 <br>
+                 <h2>Emails</h2>
+                 <div>
+                   <h3>Equipe</h3>
+                     <p class="emails"><a href="mailto:camilafeitosamiranda@gmail.com?subject=Olá"><i class='bx bx-envelope'></i>&nbsp;camilafeitosamiranda@gmail.com</a></p>
+                     <p class="emails"><a href="mailto:gabryellegabysousa@gmail.com?subject=Olá"><i class='bx bx-envelope'></i>&nbsp;gabryellegabysousa@gmail.com</a></p>
+                     <p class="emails"><a href="mailto:raissa.silva6618@gmail.com?subject=Olá"><i class='bx bx-envelope'></i>&nbsp;raissa.silva6618@gmail.com</a></p>
+                 </div>
+                 <div>
+                 <br>
+                   <h3>Site</h3>
+                     <p class="emails"><a href="mailto:peak.beauty.pb@gmail.com?subject=Olá"><i class='bx bx-envelope'></i>&nbsp;peak.beauty.pb@gmail.com</a></p>
+                 </div>
+                 <br>
+                 <h3>Horários</h3>
+                 <p>Seg - Sex  ·····································  8h às 20h</p>
+                 <p>Sáb - Dom  ·····································  8h às 15h</p>
+                 <p>Feriados   ·····································  8h às 15h</p>
+             </div>
+         </div>
+
+        <!--Rodapé-->
+        <footer class="footer-distributed">
+
+            <!--Esquerda-->
+                <div class="footer-left">
+                    <img src="../img/icon.png" class="icon-footer" alt="icon" onclick="link()">
+                    <img src="../img/logo.png" class="logo-footer" alt="logo" onclick="link()">
+                    <p class="footer-links">
+                        <a href="../index.html">Início</a>
+                        &nbsp;|&nbsp;
+                        <a href="../pages/sobrenos.html">Sobre Nós</a>
+                        &nbsp;|&nbsp;
+                        <a href="../pages/contato.php">Contato</a>
+                    </p>
+                    <p class="footer-company-name">© Copyright 2022<strong> PeakBeauty </strong>Todos os direitos reservados.</p>
+                </div>
+            <!--Fim Esquerda-->
+        
+            <!--Centro-->
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Rua Amapá, 253 - Recanto Silvestre</span>
+                            Santana de Parnaíba - SP</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+55 11 98894-5603</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:peak.beauty.pb@gmail.com?subject=Olá">peak.beauty.pb@gmail.com</a></p>
+                    </div>
+                </div>
+            <!--Fim Centro-->
+        
+            <!--Direita-->
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>Sobre o Site</span>
+                        Projeto de site criado para fins pedagógicos que envolve os componentes do curso técnico de Informática para Internet.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/peakkbeauty" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/peakb.eauty/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            <!--Fim Direita-->
+            </footer>
+            <!--Fim Rodapé-->
+            
+    </body>
+</html>
