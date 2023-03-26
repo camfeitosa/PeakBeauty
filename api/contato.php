@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 include_once("../conectaBD.php");
 if(!isset($_SESSION)) {
 	session_start();
